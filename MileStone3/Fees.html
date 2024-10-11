@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Fees</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <!-- Navigation -->
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Empowering the Nation</label>
+    <ul>
+      <li><a class="active" href="Homepage.html">Home</a></li>
+      <li><a href="About us.html">About</a></li>
+      <li><a href="Courses.html">Courses</a></li>
+      <li><a href="Contact us.html">Contact us</a></li>
+      <li><a href="Register.html">Register</a></li>
+      <li><a href="Fees.html">Fees</a></li>
+
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Course Registration</h1>
+    <form id="course-form">
+      <h2>Select Courses:</h2>
+      
+      <div class="course-selection">
+        <label>
+          <input type="checkbox" name="course" value="1000" data-course="Course A">
+          Landscaping - R1500
+        </label><br>
+        
+        <label>
+          <input type="checkbox" name="course" value="1500" data-course="Course B">
+          Sewing - R1500
+        </label><br>
+        
+        <label>
+          <input type="checkbox" name="course" value="2000" data-course="Course C">
+          First Aid - R1500
+        </label><br>
+      </div>
+
+      <label>
+        <input type="checkbox" name="course" value="2000" data-course="Course C">
+        Child Minding - R750
+      </label><br>
+    </div>
+
+    <label>
+        <input type="checkbox" name="course" value="2000" data-course="Course C">
+        Life Skills - R1500
+      </label><br>
+    </div>
+
+
+      <h2>Your Details:</h2>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <button type="button" id="calculate-btn">Calculate Total Fees</button>
+
+      <div id="quote">
+        <h3>Quoted Total Fee:</h3>
+        <p id="total-fee">R0</p>
+      </div>
+    </form>
+  </div>
+
+  
+</body>
+</html>

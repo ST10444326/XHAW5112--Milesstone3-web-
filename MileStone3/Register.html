@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empowering the Nation | Register Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Empowering the Nation</label>
+    <ul>
+      <li><a class="active" href="Homepage.html">Home</a></li>
+      <li><a href="About us.html">About us</a></li>
+      <li><a href="Courses.html">Courses</a></li>
+      <li><a href="Contact us.html">Contact us</a></li>
+      <li><a href="Register.html">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Registration Form -->
+  <div class="container">
+    <div class="title">Register</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" required>
+          </div>
+        </div>
+
+        <div class="courses-details">
+          <input type="radio" name="courses" id="dot-1">
+          <input type="radio" name="courses" id="dot-2">
+          <input type="radio" name="courses" id="dot-3">
+          <span class="gender-title">Courses</span>
+          <div class="category">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="courses">Child Minding</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="courses">Landscaping</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="courses">Sewing</span>
+            </label>
+            <label for="dot-4">
+              <span class="dot three"></span>
+              <span class="courses">First Aid</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+<footer>
+  <p>&copy; 2024 Empowering The Nation. all rights reserved</p>
+</footer>
+</html>

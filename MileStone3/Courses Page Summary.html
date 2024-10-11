@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Summary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1><strong>Empowering The Nation</strong></h1>
+            <p>&trade;(trademark)</p>
+        </div>
+
+        <section id="heading">
+            <h1>Courses Summary Page</h1>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="Milestone3 - Courses Page Summary.html">Courses Summary Page</a></li>
+                <li><a href="Milestone3 - LandScaping.html">Landscaping Page</a></li>
+                <li><a href="Milestone3 - First Aid.html">First-aid Page</a></li>
+                <li><a href="Milestone3 - Sewing.html">Sewing Page</a></li>
+                <li><a href="Milestone3 - LifeSkills.html">Life-skills Page</a></li>
+                <li><a href="Milestone3 - Child Minding.html">Child minding Page</a></li>
+                <li><a href="Milestone3 - Cooking.html">Cooking Page</a></li>
+                <li><a href="Milestone3 - Garden Maintenance.html">Garden Maintenance Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>At Empowering The nation we offer a variety of subjects that range between a time span of either 6 weeks or 6 months accordingly.
+            A list of the available offered subjects can be found below.
+        </p>
+
+        <!-- Dropdown for Six-Weeks Course -->
+        <div style="display: flex; align-items: center;">
+            <label>Select Six-Weeks Course:</label>
+            <select id="sixWeeksDropdown" style="margin-left: 10px;" onchange="redirectToPage('sixWeeksDropdown')">
+                <option value="">Select Option</option>
+                <option value="Milestone3 - Child Minding.html">Child Minding</option>
+                <option value="Milestone3 - Cooking.html">Cooking</option>
+                <option value="Milestone3 - Garden Maintenance.html">Garden Maintenance</option>
+            </select>
+        </div>
+
+        <!-- Dropdown for Six-Months Course -->
+        <div style="display: flex; align-items: center; margin-top: 20px;">
+            <label>Select Six-Months Course:</label>
+            <select id="sixMonthsDropdown" style="margin-left: 10px;" onchange="redirectToPage('sixMonthsDropdown')">
+                <option value="">Select Option</option>
+                <option value="Milestone3 - First Aid.html">First Aid</option>
+                <option value="Milestone3 - Sewing.html">Sewing</option>
+                <option value="Milestone3 - LandScaping.html">Landscaping</option>
+                <option value="Milestone3 - LifeSkills.html">LifeSkills</option>
+            </select>
+        </div>
+
+        <!-- JavaScript for Redirection -->
+        <script>
+            function redirectToPage(dropdownId) {
+                const dropdown = document.getElementById(dropdownId);
+                const selectedValue = dropdown.value;
+                if (selectedValue) {
+                    window.location.href = selectedValue;
+                }
+            }
+        </script>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Empowering The Nation. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

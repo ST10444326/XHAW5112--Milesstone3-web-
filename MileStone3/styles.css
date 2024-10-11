@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background:  #71b7e6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar Styling */
+nav {
+  background: #1c252c;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav label.logo {
+  color: white;
+  font-size: 29px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 20px;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+nav a.active,
+nav a:hover {
+  background: #1b9bff;
+}
+
+.checkbtn {
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 890px) {
+  .checkbtn {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    flex-direction: column;
+    background-color: #2c3e50;
+    transition: all 0.5s ease;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    padding: 20px;
+    display: block;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+
+/* Contact Form Styling */
+.container {
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 55px;
+}
+
+.container .content {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+}
+
+.left-side, .right-side {
+  width: 48%;
+}
+
+.details {
+  margin-bottom: 20px;
+}
+
+.details i {
+  font-size: 30px;
+  color: #1f38aa;
+  margin-bottom: 10px;
+}
+
+.details .topic {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.details .text-one, .details .text-two, .details .text-three {
+  font-size: 14px;
+  color: #afafb6;
+}
+
+.topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #1f38aa;
+}
+
+.input-box {
+  height: 60px;
+  margin: 12px 0px;
+}
+
+.input-box input, .input-box textarea {
+  width: 200px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #f0f1f8;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.message-box {
+  min-height: 110px;
+}
+
+.button {
+  display: inline-block;
+}
+
+.button input[type="submit"] {
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #1f38aa;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button input[type="submit"]:hover {
+  background: #1f38aa;
+}
+
+@media (max-width: 950px) {
+  .container {
+    width: 90%;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .left-side, .right-side {
+    width: 100%;
+  }
+}
+
+/* Homepage Styling */
+section.homepage {
+  background: url(images/6.webp);
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.homepage .content {
+  max-width: 1500px;
+  padding: 50px 80px;
+}
+
+.homepage h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.homepage p {
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.homepage .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #1b9bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.homepage .btn:hover {
+  background-color: #147ec2;
+}
+
+@media (max-width: 768px) {
+  .homepage h1 {
+    font-size: 36px;
+  }
+
+  .homepage p {
+    font-size: 16px;
+  }
+
+  .homepage .btn {
+    font-size: 14px;
+  }
+}
+
+/* Registration Form Styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.container {
+  max-width: 700px;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus, .user-details .input-box input:valid {
+  border-color: #9b59b6;
+}
+
+form .courses-details .courses-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .category {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+form .category label .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked~.category label .one, 
+#dot-2:checked~.category label .two, 
+#dot-3:checked~.category label .three 
+#dot-4:checked~.category label .four {
+  background: #9b59b6;
+  border-color: #d9d9d9;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+form .button {
+  height: 45px;
+  margin: 35px 0;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+form .button input:hover {
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+/* Responsive */
+@media(max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+
+  form .user-details .input-box {
+    width: 100%;
+  }
+
+  form .category {
+    width: 100%;
+  }
+
+  form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+@media(max-width: 459px) {
+  .container .content .category {
+    flex-direction: column;
+  }
+}
+/* About Us Section */
+.about-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-section p {
+  font-size: 18px;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+/* Cards for Courses */
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .container {
+  padding: 20px;
+  text-align: left;
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #9b59b6;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.card a:hover {
+  color: #71b7e6;
+}
+
+footer {
+  background-color: #1c252c;
+  color: #fff; 
+  text-align: center; 
+  padding: 20px 0; 
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif; 
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3); 
+}
+
+footer p {
+  margin: 0; 
+}
+
+footer a {
+  color: #1b9bff; 
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline; 
+}
